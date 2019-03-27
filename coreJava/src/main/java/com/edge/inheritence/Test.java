@@ -1,4 +1,4 @@
-package com.edge.passBy;
+package com.edge.inheritence;
 
 class Test{
 	public static void main (String [] a) {

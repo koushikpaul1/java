@@ -1,4 +1,6 @@
-package com.edge.passBy;
+package com.edge.inheritence;
+
+import com.edge.passBy.Project;
 
 public class Developer extends Employee{
 	

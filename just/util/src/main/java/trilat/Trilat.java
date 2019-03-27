@@ -35,8 +35,8 @@ public class Trilat {
 		//double[][] positions = new double[][] { { 0.0, 0.0 }, {3.0,1.5}, { 6.0, 0.0 } };
 		//double[] distances = new double[] { 5, 2.5, 5};//3.0,-1.6180333396289484/wrong
 		//5
-		//double[][] positions = new double[][] { { 0.0, 0.0 }, {3.0,1.5}, { 6.0, 0.0 } };
-		//double[] distances = new double[] { 5, 2.5, 5};//3.0,-1.6180333396289484/wrong
+		double[][] positions = new double[][] { { 0.0, 0.0 }, {3.0,1.5}, { 6.0, 0.0 } };
+		double[] distances = new double[] { 5, 2.5, 5};//3.0,-1.6180333396289484/wrong
 		TrilaterationFunction trilaterationFunction=new TrilaterationFunction(positions,distances);
 		NonLinearLeastSquaresSolver nlSolver = new NonLinearLeastSquaresSolver(trilaterationFunction,new LevenbergMarquardtOptimizer());
 		Optimum optimum = nlSolver.solve();
