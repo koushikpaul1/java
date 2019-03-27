@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.edge.collection.stack;
+package com.edge.collection.E_Stack;
 
 import java.util.ArrayList;
 import java.util.List;
