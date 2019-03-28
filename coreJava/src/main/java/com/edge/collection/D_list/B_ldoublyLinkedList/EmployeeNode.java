@@ -1,6 +1,7 @@
-package com.edge.collection.D_list.A_linkedlist;
+package com.edge.collection.D_list.B_ldoublyLinkedList;
 
 public class EmployeeNode {
+	private EmployeeNode prev;
 	private Employee employee;
 	private EmployeeNode next;
 
@@ -17,6 +18,13 @@ public class EmployeeNode {
 		this.employee = employee;
 	}
 
+	public EmployeeNode getPrev() {
+		return prev;
+	}
+
+	public void setPrev(EmployeeNode prev) {
+		this.prev = prev;
+	}
 
 	public EmployeeNode getNext() {
 		return next;

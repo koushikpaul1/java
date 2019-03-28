@@ -1,6 +1,6 @@
-package com.edge.collection.D_list.A_linkedlist;
+package com.edge.collection.D_list.A_linkedlistx;
 
-//import java.util.LinkedList;
+import java.util.LinkedList;
 
 public class Main {
 
@@ -23,29 +23,7 @@ public class Main {
 		empList.add(johnDoe);
 		empList.add(marySmith);
 		empList.add(mikeWilson);	
-
-		
 		empList.print();
-		System.out.println("\n"+empList.size());
-		
-		
-		System.out.println("\n");
-		empList.removeFromFront();
-		empList.print();
-		System.out.println("\n"+empList.size());
-		
-	/*	
-		System.out.println("\n");
-		empList.removeFromEnd();
-		empList.print();
-		System.out.println("\n"+empList.size());*/
-		
-		
-		System.out.println("\n");
-		empList.addAtFront(mikeWilson);
-		empList.print();
-		System.out.println("\n"+empList.size());
-
  	}
 	
 	
