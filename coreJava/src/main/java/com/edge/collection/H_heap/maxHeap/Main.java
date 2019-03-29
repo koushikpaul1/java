@@ -1,4 +1,4 @@
-package com.edge.edgeCollection.heap.maxHeap;
+package com.edge.collection.H_heap.maxHeap;
 
 public class Main {
     public static  void main(String [] a){

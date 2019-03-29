@@ -11,7 +11,6 @@ public class Brackets {
 		String input = sc.nextLine();
 		String[] datas = input.split(" ");
 		int len= Integer.parseInt(datas[0]);
-		int counter = 0;
 		Stack stack = new Stack<>();
 		String flag = "YES";
 		for(int i=1;i<=len;i++) {

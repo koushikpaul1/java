@@ -66,7 +66,7 @@ final class ImmutableStudent {
 		 copyAge.setDay(age.getDay());
 		 copyAge.setMonth(age.getMonth());
 		 copyAge.setYear(age.getYear());
-		 this.age = copyAge;
+		 this.age = age;
 		 }
 	 
 	 public int getId() {

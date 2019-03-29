@@ -11,7 +11,7 @@ public class PassBy {
 	        
 	        Employee e=new Employee("Edge",30,200000,"Bangalore");
 	        
-	        change(e);
+	        change(e);//sending a copy of reference of the actual object, both the references point the same object, both can change the actual object.
 	        System.out.println(e);//Employee [name=Dimono, age=30, sal=200000.0, address=Bangalore]
 	        Employee f=e;
 	        change2(e);
@@ -42,15 +42,13 @@ public class PassBy {
 	    {
 	        Employee d=e;
 	        d.setName("Dimono");
-	        Employee f=new Employee();
-	        f=e;
 	        
 	    }
 	    public static void change2(Employee  e)
 	    {	       
-	        Employee f=new Employee();
+	        Employee f=new Employee();// new reference of a new object
 	        System.out.println(f);//Employee [name=null, age=0, sal=0.0, address=null]
-	        f=e;
+	        f=e;// now the reference is pointing a different object than the one was created by new. now both e and f are pointing to the same object.
 	        System.out.println(f);//Employee [name=Dimono, age=30, sal=200000.0, address=Bangalore]
 	        f.setName("Pirate");
 	    }

@@ -1,4 +1,4 @@
-package com.edge.collection.set;
+package com.edge.collection.I_set;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,8 +25,8 @@ public class FindDups {
 	void forEach() {
 		Set<String> s = new HashSet<String>();
 		Set<String> t = new TreeSet<String>();		
-		for (String a : input)s.add(a);
-		for (String a : input)t.add(a);
+		for (String a : input)  s.add(a);
+		for (String a : input)  t.add(a);
 		System.out.println(s.size() + " distinct words: " + s);
 		System.out.println(t.size() + " distinct words: " + t);
 	}

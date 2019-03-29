@@ -1,4 +1,4 @@
-package com.edge.algorithm.traceArea;
+package com.edge.misc.algorithm.traceArea;
 
 import java.util.Arrays;
 import java.util.List;

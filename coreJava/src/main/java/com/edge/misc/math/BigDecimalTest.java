@@ -1,4 +1,4 @@
-package com.edge.math;
+package com.edge.misc.math;
 
 import java.math.BigDecimal;
 

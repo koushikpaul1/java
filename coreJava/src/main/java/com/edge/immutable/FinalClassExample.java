@@ -56,7 +56,7 @@ public final class FinalClassExample {
 	 * @param n
 	 * @param hm
 	 */
-	/**
+	/*
 	public FinalClassExample(int i, String n, HashMap<String,String> hm){
 		System.out.println("Performing Shallow Copy for Object initialization");
 		this.id=i;
@@ -81,25 +81,25 @@ public final class FinalClassExample {
 		FinalClassExample ce = new FinalClassExample(i,s,h1);
 		
 		//Lets see whether its copy by field or reference
-		System.out.println(s==ce.getName());
-		System.out.println(h1 == ce.getTestMap());
+		System.out.println(s==ce.getName());//true
+		System.out.println(h1 == ce.getTestMap());//false
 		//print the ce values
-		System.out.println("ce id:"+ce.getId());
-		System.out.println("ce name:"+ce.getName());
-		System.out.println("ce testMap:"+ce.getTestMap());
+		System.out.println("ce id:"+ce.getId());//ce id:10
+		System.out.println("ce name:"+ce.getName());//ce name:original
+		System.out.println("ce testMap:"+ce.getTestMap());//ce testMap:{1=first, 2=second}
 		//change the local variable values
 		i=20;
 		s="modified";
 		h1.put("3", "third");
 		//print the values again
-		System.out.println("ce id after local variable change:"+ce.getId());
-		System.out.println("ce name after local variable change:"+ce.getName());
-		System.out.println("ce testMap after local variable change:"+ce.getTestMap());
+		System.out.println("ce id after local variable change:"+ce.getId());//10
+		System.out.println("ce name after local variable change:"+ce.getName());//original
+		System.out.println("ce testMap after local variable change:"+ce.getTestMap());//{1=first, 2=second}
 		
 		HashMap<String, String> hmTest = ce.getTestMap();
 		hmTest.put("4", "new");
 		
-		System.out.println("ce testMap after changing variable from accessor methods:"+ce.getTestMap());
+		System.out.println("ce testMap after changing variable from accessor methods:"+ce.getTestMap());//{1=first, 2=second}
 
 	}
 

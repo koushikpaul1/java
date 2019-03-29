@@ -1,4 +1,4 @@
-package com.edge.algorithm.traceArea;
+package com.edge.misc.algorithm.traceArea;
 
 public class Coordinate {
 	private double x;
