@@ -1,5 +1,5 @@
 Open in J2EE IDE of eclipse
-Set Buildpath Java(JRE) version>= 1.8 
+Set Buildpath Java(JRE) version>= 1.8 ( 8.25 )
 	Compiler version = same as JRE
 Covert to Facet proj
 Maven : Update maven project

@@ -673,6 +673,6 @@ implements X509Extension {
     public void verify(PublicKey key, Provider sigProvider)
         throws CertificateException, NoSuchAlgorithmException,
         InvalidKeyException, SignatureException {
-        X509CertImpl.verify(this, key, sigProvider);
+        //X509CertImpl.verify(this, key, sigProvider);
     }
 }

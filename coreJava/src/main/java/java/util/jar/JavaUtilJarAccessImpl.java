@@ -60,4 +60,22 @@ class JavaUtilJarAccessImpl implements JavaUtilJarAccess {
     public List<Object> getManifestDigests(JarFile jar) {
         return jar.getManifestDigests();
     }
+
+	@Override
+	public void ensureInitialization(JarFile arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Attributes getTrustedAttributes(Manifest arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isInitializing() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
