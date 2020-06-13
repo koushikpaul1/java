@@ -5,55 +5,80 @@ public class EmployeeLinkedList {
 	private EmployeeNode tail;
 	private int size;
 
-	public void add(Employee employee) {
+	public void add(Employee employee){
 		EmployeeNode node = new EmployeeNode(employee);
-		if (head == null) {
+		if(head == null){
 			head = node;
 			tail = node;
-		} else {
+		}else{
 			tail.setNext(node);
 			tail = node;
 		}
 		size++;
 	}
 
-	public void addAtFront(Employee employee) {
+	public void addAtFront(Employee employee){
 		EmployeeNode node = new EmployeeNode(employee);
-		if (head == null) {
+		if(head == null){
 			head = node;
 			tail = node;
-		} else {
+		}else{
 			node.setNext(head);
 			head = node;
 		}
 		size++;
 	}
 
-	/*
-	 * public void removeFromEnd() { if (head == null) {
-	 * System.out.println("Empty List"); } else { tail.setEmployee( new Employee());
-	 * }size--; }
-	 */
-	public void removeFromFront() {
-		if (head == null) {
+	public void removeFromFront(){
+		if(head == null){
 			System.out.println("Empty List");
-		} else {
+		}else{
 			head = head.getNext();
 		}
 		size--;
 	}
 
-	public int size() {
+	public int size(){
 		return size;
 	}
 
-	public void print() {
+	public void print(){
 		EmployeeNode current = head;
-		while (current != null) {
+		while (current != null){
 			System.out.print(current);
 			current = current.getNext();
-			if (current != null)
-				System.out.print(", ");
+			if(current != null) System.out.print(", ");
 		}
+	}
+}
+
+class EmployeeNode {
+	private Employee employee;
+	private EmployeeNode next;
+
+	public EmployeeNode(Employee employee){
+		super();
+		this.employee = employee;
+	}
+
+	public Employee getEmployee(){
+		return employee;
+	}
+
+	public void setEmployee(Employee employee){
+		this.employee = employee;
+	}
+
+	public EmployeeNode getNext(){
+		return next;
+	}
+
+	public void setNext(EmployeeNode next){
+		this.next = next;
+	}
+
+	@Override
+	public String toString(){
+		return employee.toString();
 	}
 }

@@ -10,7 +10,7 @@ public class Main {
 		Employee marySmith = new Employee(3, "Mary", "Smith");
 		Employee mikeWilson = new Employee(4, "Mike", "Wilson");
 
-		LinkedList list = new LinkedList();
+		DoublyLinkedList list = new DoublyLinkedList();
 		list.add(janeJones);
 		list.add(johnDoe);
 		list.add(marySmith);
