@@ -11,7 +11,7 @@ public class SimpleHashtable {
     public void put(String key, Employee employee) {
         int hashedKey = hashKey(key);
         if (hashtable[hashedKey] != null) {
-            System.out.println("Sorry, there's already an employee at position " + hashedKey);
+            System.out.println("Sorry, there's already an employee at position " + hashedKey+", can't add "+key);
         }
         else {
             hashtable[hashedKey] = employee;

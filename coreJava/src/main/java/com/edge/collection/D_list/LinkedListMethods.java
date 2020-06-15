@@ -3,7 +3,7 @@ package com.edge.collection.D_list;
 import java.util.LinkedList;
 import java.util.Stack;
 
-public class LinkedListX {
+public class LinkedListMethods {
     @SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main (String [] args){
 
