@@ -1,69 +1,62 @@
 package com.edge.collection.G_binarysearchtree.C_traversal;
 
 public class TreeNode {
+	private int data;
+	private TreeNode leftChild;
+	private TreeNode rightChild;
 
-    private int data;
-    private TreeNode leftChild;
-    private TreeNode rightChild;
+	public void insert(int value){
+		if(value == data){ return; }
+		if(value < data){
+			if(leftChild == null){
+				leftChild = new TreeNode(value);
+			}else{
+				leftChild.insert(value);
+			}
+		}else{
+			if(rightChild == null){
+				rightChild = new TreeNode(value);
+			}else{
+				rightChild.insert(value);
+			}
+		}
+	}
 
-    public void insert(int value) {
-        if (value == data) {
-            return;
-        }
+	public void traverseInOrder(){
+		if(leftChild != null){
+			leftChild.traverseInOrder();
+		}
+		System.out.print(data + ", ");
+		if(rightChild != null){
+			rightChild.traverseInOrder();
+		}
+	}
 
-        if (value < data) {
-            if (leftChild == null) {
-                leftChild = new TreeNode(value);
-            }
-            else {
-                leftChild.insert(value);
-            }
-        }
-        else {
-            if (rightChild == null) {
-                rightChild = new TreeNode(value);
-            }
-            else {
-                rightChild.insert(value);
-            }
-        }
-    }
+	public TreeNode(int data){
+		this.data = data;
+	}
 
-    public void traverseInOrder() {
-        if (leftChild != null) {
-            leftChild.traverseInOrder();
-        }
-        System.out.print(data + ", ");
-        if (rightChild != null) {
-            rightChild.traverseInOrder();
-        }
-    }
+	public int getData(){
+		return data;
+	}
 
-    public TreeNode(int data) {
-        this.data = data;
-    }
+	public void setData(int data){
+		this.data = data;
+	}
 
-    public int getData() {
-        return data;
-    }
+	public TreeNode getLeftChild(){
+		return leftChild;
+	}
 
-    public void setData(int data) {
-        this.data = data;
-    }
+	public void setLeftChild(TreeNode leftChild){
+		this.leftChild = leftChild;
+	}
 
-    public TreeNode getLeftChild() {
-        return leftChild;
-    }
+	public TreeNode getRightChild(){
+		return rightChild;
+	}
 
-    public void setLeftChild(TreeNode leftChild) {
-        this.leftChild = leftChild;
-    }
-
-    public TreeNode getRightChild() {
-        return rightChild;
-    }
-
-    public void setRightChild(TreeNode rightChild) {
-        this.rightChild = rightChild;
-    }
+	public void setRightChild(TreeNode rightChild){
+		this.rightChild = rightChild;
+	}
 }

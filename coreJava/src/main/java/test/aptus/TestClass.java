@@ -1,4 +1,4 @@
-package aptus;
+package test.aptus;
 // if the number is equal to sum of its factors 6=1+2+3
 
 import java.io.*;

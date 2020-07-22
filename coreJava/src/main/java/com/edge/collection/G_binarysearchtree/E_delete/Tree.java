@@ -1,4 +1,4 @@
-package com.edge.collection.G_binarysearchtree.F_delete_2children;
+package com.edge.collection.G_binarysearchtree.E_delete;
 
 public class Tree {
 

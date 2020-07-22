@@ -1,4 +1,4 @@
-package com.edge.collection.G_binarysearchtree.E_delete_0child_1child;
+package com.edge.collection.G_binarysearchtree.E_delete;
 
 public class Main {
 

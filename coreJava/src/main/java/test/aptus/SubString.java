@@ -1,4 +1,4 @@
-package aptus;
+package test.aptus;
 
 import java.io.*;
 import java.util.*;
