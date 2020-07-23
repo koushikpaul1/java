@@ -20,7 +20,7 @@ public class Stringg {
 		System.out.println("c=" + c);//abcdefg
 		System.out.println(a.equals(b));//false
 		System.out.println(a==b);//false
-		System.out.println(c.equals(b));
+		System.out.println(c.equals(b));//true
 		System.out.println(b==c);//false
 		System.out.println(d==c);//true
 		System.out.println(b==e);//false
@@ -29,6 +29,21 @@ public class Stringg {
 		System.out.println(a.equals(b));//true
 		System.out.println(a==b);//true
 		System.out.println("\n");
+		
+		
+		
+		/*String aa="x";
+		String bb="x";
+		String cc=new String("x");		
+		StringBuilder dd=new StringBuilder().append("x");
+		StringBuilder ee=new StringBuilder().append("x");
+		System.out.println(aa==bb );
+		System.out.println(cc==bb );
+		System.out.println(aa.equals(bb) );
+		System.out.println(aa.equals(cc) );
+		System.out.println(dd==ee );
+		System.out.println(dd.equals(ee) );
+		System.out.println("\n");*/
 	}
 	void stringBuilder() {
 		StringBuilder a = new StringBuilder("abc");
