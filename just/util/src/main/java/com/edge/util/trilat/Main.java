@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.edge.trilat;
+package com.edge.util.trilat;
 
 import org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction;
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer.Optimum;
