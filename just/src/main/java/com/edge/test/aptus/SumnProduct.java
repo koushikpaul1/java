@@ -1,11 +1,11 @@
-package test.aptus;
+package com.edge.test.aptus;
 // if the number is equal to sum of its factors 6=1+2+3
 
 import java.io.*;
 import java.util.*;
 
 
-public class TestClass {
+public class SumnProduct {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter wr = new PrintWriter(System.out);

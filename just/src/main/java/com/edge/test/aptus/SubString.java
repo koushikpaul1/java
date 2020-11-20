@@ -1,4 +1,4 @@
-package test.aptus;
+package com.edge.test.aptus;
 
 import java.io.*;
 import java.util.*;
