@@ -1,4 +1,4 @@
-package com.edge.brainscratcher;
+package com.edge.interview.leetCode;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,6 +8,9 @@ import java.util.Set;
 
 import static java.util.Arrays.asList;
 
+
+// Find all possible combination of addition of a number
+//3=1+1+1,1+2
 public class AllCombinations {
 
 	@SuppressWarnings("serial")

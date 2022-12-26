@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.edge.test.xebia;
+package com.edge.interview.xebia;
 
 import java.util.Scanner;
 
