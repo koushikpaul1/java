@@ -3,7 +3,7 @@ http://javaconceptoftheday.com/collection-framework-class-hierarchy/s
 jvaa.lang.Iterable (Iterator<E> iterator()	Returns an iterator over the collection.))
  
 java.util.Collection(
-1	int size()	Returns the number of elements in this collection
+1	int size()	Returns the number of elements in this collection 
 2	boolean isEmpty()	Checks whether this collection is empty or not. If collection is empty, it returns true otherwise it returns false
 3	boolean contains(Object o)	Checks whether this collection has specified element.
 4	Iterator<E> iterator()	Returns an iterator over the collection.
