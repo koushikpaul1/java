@@ -1,8 +1,25 @@
 package com.edge.interview;
 
 import java.util.Scanner;
-
-public class First
+/**
+ * @author edge
+ *Given a string of bits and a number k. In one flip, you can toggle k consecutive characters, how many flips are required to change the entire string to all ones. For example
+		Input String: 0000110000
+		k: 3
+		OUTPUT: 4
+		Following are the four flips:
+		
+		FLIP-1: 1110110000
+		FLIP-2: 1110110111
+		FLIP-3: 1111000111
+		FLIP-4: 1111111111
+		If it is not possible to set all bits in the string then return -1. For example:
+		
+		Input String: 01010101
+		k: 3
+		OUTPUT: -1
+ */
+public class FlipToAll1
 {
    public static int countFlips(char[] str, int k)
    {

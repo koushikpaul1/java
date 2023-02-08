@@ -1,4 +1,4 @@
-package com.edge.just.test.theDataTeam;
+package com.edge.interview.theDataTeam;
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;

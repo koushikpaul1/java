@@ -1,4 +1,4 @@
-package com.edge.just.test.theDataTeam;
+package com.edge.interview.theDataTeam;
 
 /*
 1:2,3;2:4,5,6,7;5:8,9,10;10:11,12,13,14;11:15,16;14:17,18,19;16:20,21
